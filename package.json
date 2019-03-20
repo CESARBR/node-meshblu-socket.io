@@ -8,7 +8,7 @@
   "author": "Octoblu <sqrt@octoblu.com>",
   "main": "./index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha \"test/**/*.{js,coffee}\""
   },
   "keywords": [
     "iot",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "coffeescript": "^2.3.2",
-    "mocha": "^2.1.0",
+    "mocha": "^6.0.2",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.6.0"
   }
