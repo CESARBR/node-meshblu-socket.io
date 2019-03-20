@@ -8,7 +8,6 @@
   "author": "Octoblu <sqrt@octoblu.com>",
   "main": "./index.js",
   "scripts": {
-    "preinstall": "node -e \"try{require('./skip-install.js')}catch(e){}\"",
     "test": "mocha"
   },
   "keywords": [
@@ -32,11 +31,6 @@
     "tar": "^2.1.1",
     "url": "^0.10.3"
   },
-  "bundledDependencies": [
-    "request",
-    "tar",
-    "fstream"
-  ],
   "devDependencies": {
     "chai": "^1.10.0",
     "codeclimate-test-reporter": "0.0.4",
