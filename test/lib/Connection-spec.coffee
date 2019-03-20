@@ -348,11 +348,12 @@ describe 'Connection', ->
             exportKey: (arg) => {public: 'the-public', private: 'the-private'}[arg]
 
           @nodeRSA = new FakeNodeRSA()
+          self = @
 
           @sut = new Connection( {}, {
             socketIoClient: -> new EventEmitter(),
             console: @console
-            NodeRSA: => @nodeRSA
+            NodeRSA: -> self.nodeRSA
           });
           @result = @sut.generateKeyPair()
 
