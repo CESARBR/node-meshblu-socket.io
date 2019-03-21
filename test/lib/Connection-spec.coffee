@@ -180,7 +180,7 @@ describe 'Connection', ->
 
           describe 'when publicKey.encrypt returns with a buffer of "12345"', ->
             beforeEach ->
-              @publicKey.encrypt.returns new Buffer '12345',
+              @publicKey.encrypt.returns Buffer.from '12345',
 
             it 'should call message with an encrypted payload', ->
               @sut.encryptMessage 1, hello : 'world'
@@ -216,7 +216,7 @@ describe 'Connection', ->
     describe 'sign', ->
       beforeEach ->
         @sut.privateKey =  sign: sinon.stub()
-        @sut.privateKey.sign.returns new Buffer( 'cafe', 'base64')
+        @sut.privateKey.sign.returns Buffer.from( 'cafe', 'base64')
 
       it 'should exist', ->
         expect(@sut.sign).to.exist
@@ -239,12 +239,12 @@ describe 'Connection', ->
 
       describe 'when privateKey.sign returns a buffer', ->
         it 'should return the base64-encoded version of that buffer', ->
-          @sut.privateKey.sign.returns new Buffer( 'deadbeef', 'base64')
+          @sut.privateKey.sign.returns Buffer.from( 'deadbeef', 'base64')
           expect( @sut.sign 'whatever' ).to.equal 'deadbeef'
 
       describe 'when privateKey.sign returns a different buffer', ->
         it 'should return the base64-encoded version of that buffer', ->
-          @sut.privateKey.sign.returns new Buffer( 'decafec0ffee', 'base64')
+          @sut.privateKey.sign.returns Buffer.from( 'decafec0ffee', 'base64')
           expect( @sut.sign 'whatever' ).to.equal 'decafec0ffee'
 
     describe 'verify', ->
