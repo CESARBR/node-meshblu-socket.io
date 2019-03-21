@@ -35,7 +35,7 @@ A client side library for using the [Meshblu Socket.IO API](https://meshblu-sock
 The Meshblu client-side library is best obtained through NPM:
 
 ```shell
-npm install --save meshblu
+npm install --save @cesarbr/meshblu
 ```
 
 Alternatively, a browser version of the library is available from https://cdn.octoblu.com/js/meshblu/latest/meshblu.bundle.js. This exposes a global object on `window.meshblu`.
@@ -49,7 +49,7 @@ Alternatively, a browser version of the library is available from https://cdn.oc
 The client side library establishes a secure socket.io connection to Meshblu at `https://meshblu-socket-io.octoblu.com` by default.
 
 ```javascript
-var meshblu = require('meshblu');
+var meshblu = require('@cesarbr/meshblu');
 var conn = meshblu.createConnection({
   uuid: '78159106-41ca-4022-95e8-2511695ce64c',
   token: 'd5265dbc4576a88f8654a8fc2c4d46a6d7b85574'
