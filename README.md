@@ -1,8 +1,6 @@
 # node-meshblu-socket.io
 
-[![Build Status](https://travis-ci.org/octoblu/node-meshblu-socket.io.svg?branch=master)](https://travis-ci.org/octoblu/node-meshblu-socket.io)
-[![Code Climate](https://codeclimate.com/github/octoblu/meshblu-npm/badges/gpa.svg)](https://codeclimate.com/github/octoblu/meshblu-npm)
-[![Test Coverage](https://codeclimate.com/github/octoblu/meshblu-npm/badges/coverage.svg)](https://codeclimate.com/github/octoblu/meshblu-npm)
+[![Build Status](https://travis-ci.org/CESARBR/node-meshblu-socket.io.svg?branch=master-v1)](https://travis-ci.org/CESARBR/node-meshblu-socket.io)
 
 A client side library for using the [Meshblu Socket.IO API](https://meshblu-socketio.readme.io/) in [Node.js](https://nodejs.org)
 
