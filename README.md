@@ -4,6 +4,10 @@
 
 A client side library for using the [Meshblu Socket.IO API](https://meshblu-socketio.readme.io/) in [Node.js](https://nodejs.org)
 
+# NOTICE: @cesarbr Scope
+
+This is an updated version of the [`meshblu`](https://www.npmjs.com/package/meshblu) package that contains only security fixes for the unsupported v1. For the latest version, use the original package.
+
 # Table of Contents
 
 * [Getting Started](#getting-started)
