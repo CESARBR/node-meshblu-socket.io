@@ -1,7 +1,7 @@
 {
   "name": "@cesarbr/meshblu",
   "description": "Meshblu IoT network and API",
-  "version": "1.34.1",
+  "version": "1.34.2",
   "license": "MIT",
   "homepage": "https://developer.octoblu.com",
   "repository": "https://github.com/CESARBR/node-meshblu-socket.io",
